@@ -1,6 +1,5 @@
 # BlockchainBridgeway
 
-![BlockchainBridgeway Logo](/public/blockchain bridge logo.png)
 
 BlockchainBridgeway is a comprehensive platform that revolutionizes project decisions in Web3 development. We harness the power of artificial intelligence and smart team collaboration to transform your blockchain and web3 ideas into actionable insights, propelling your projects to new heights of success.
 
@@ -29,29 +28,6 @@ BlockchainBridgeway is a comprehensive platform that revolutionizes project deci
 - **Icons**: Lucide React
 
 
-## Project Structure
-
-\`\`\`
-blockchain-bridgeway/
-├── public/
-│   └── [static assets]
-├── src/
-│   ├── components/
-│   │   ├── ui/
-│   │   │   └── [reusable UI components]
-│   │   ├── Hero.jsx
-│   │   ├── Navbar.jsx
-│   │   ├── Services.jsx
-│   │   └── WhyUs.jsx
-│   ├── App.jsx
-│   └── main.jsx
-├── .gitignore
-├── index.html
-├── package.json
-├── README.md
-├── tailwind.config.js
-└── vite.config.js
-\`\`\`
 
 ## Getting Started
 
