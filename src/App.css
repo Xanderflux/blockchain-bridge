@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'georgia', sans-serif;
+  background-color: rgb(13, 16, 27);
+}
+
+.app {
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+}
+
