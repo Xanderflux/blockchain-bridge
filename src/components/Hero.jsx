@@ -21,12 +21,15 @@ export default function Hero() {
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-4xl mx-auto leading-tight">
-            Revolutionizing Project Decisions with Web3 Development
+            Revolutionizing Web3 Development & Decision-Making
           </h1>
           
           <p className="text-gray-400 text-lg mb-8 max-w-2xl mx-auto">
-            Harnesses the power of artificial intelligence and smart team to transform your project and 
-            web3 idea into actionable insights, propelling you to new heights of success
+            Unlock the full potential of your project with the perfect blend of expertise and innovation.
+            At Blockchain Bridge, we combine smart strategies with top-tier talent to turn your Web3
+            vision into reality- faster, smarter, and more efficiently.
+            Whether you&apos;re refining an idea or scaling a breakthrough, we help you make informed
+            decisions that push your project to new heights.
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-16">
