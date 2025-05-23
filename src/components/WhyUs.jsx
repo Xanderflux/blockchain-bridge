@@ -2,27 +2,27 @@ export default function WhyUs() {
     const features = [
       {
         image: "/Ellipse 3.png",
-        title: "24/7 Activities",
+        title: "Always On, Always Ready",
         description:
-          "BlockchainBridge operates round the clock, ensuring seamless support for your projects. From blockchain management to community management, we're here 24/7, keeping your operations running smoothly in the decentralized world.",
+          "Web3 never sleeps—and neither do we. Blockchain Bridge operates 24/7, ensuring your project runs smoothly at all times. Whether it’s blockchain management, community engagement, or technical support, we’re always here to keep things on track in the fast-moving decentralized world.",
       },
       {
         image: "/Ellipse 4.png",
-        title: "Client Satisfaction",
+        title: "Your Success, Our Mission ✅🚀",
         description:
-          "At BlockchainBridge, our top priority is delivering exceptional results. We work closely with our clients, tailoring solutions to their specific needs. Your success is our success, and we're committed to ensuring your satisfaction every step of the way.",
+          "At Blockchain Bridge, client success isn’t just a goal—it’s the standard. We tailor our solutions to fit your unique needs, working closely with you every step of the way. When you thrive, we thrive—and we’re committed to delivering results that exceed expectations.",
       },
       {
         image: "/Ellipse 5.png",
-        title: "Security and Privacy First...",
+        title: "Security & Privacy: Non-Negotiable 🔒",
         description:
-          "BlockchainBridge prioritizes security for both your assets and the community. With strong encryption, secure smart contracts, and thorough audits, we ensure the safety of your data and the protection of your ecosystem.",
+          "In Web3, trust is everything—and we take security seriously. At Blockchain Bridge, we protect your assets, data, and community with strong encryption, secure smart contracts, and rigorous audits. Your ecosystem’s safety isn’t just a priority—it’s the foundation of everything we do.",
       },
       {
         image: "/Ellipse 6.png",
-        title: "Collaborative Features",
+        title: "Collaboration That Fuels Growth 🤝",
         description:
-          "At BlockchainBridge, we foster partnerships with top-tier communities and investors. Our collaborative features facilitate meaningful connections, enabling joint ventures and shared success in the space. Together, we create a thriving ecosystem that drives innovation and growth.",
+          "Success in Web3 isn’t a solo journey. That’s why we connect you with top-tier communities, investors, and builders to spark meaningful collaborations. Our platform makes it easy to form powerful partnerships, drive innovation, and scale faster—because when we build together, we thrive together.",
       },
     ];
   
