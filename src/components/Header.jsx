@@ -5,8 +5,8 @@ export default function Header() {
     <header className="fixed w-full bg-gray-900/80 backdrop-blur-sm z-50 border-b border-gray-800">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center gap-2">
-          <img src="/placeholder.svg?height=32&width=32" alt="BlockchainBridgeway" className="h-8" />
-          <span className="text-white font-bold">BlockchainBridgeway</span>
+          <img src="/placeholder.svg?height=32&width=32" alt="BlockchainBridgeWay" className="h-8" />
+          <span className="text-white font-bold">BlockchainBridgeWay</span>
         </div>
         
         <nav className="hidden md:flex items-center gap-8">

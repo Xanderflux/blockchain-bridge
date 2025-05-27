@@ -1,7 +1,7 @@
-# BlockchainBridgeway
+# BlockchainBridgeWay
 
 
-BlockchainBridgeway is a comprehensive platform that revolutionizes project decisions in Web3 development. We harness the power of artificial intelligence and smart team collaboration to transform your blockchain and web3 ideas into actionable insights, propelling your projects to new heights of success.
+BlockchainBridgeWay is a comprehensive platform that revolutionizes project decisions in Web3 development. We harness the power of artificial intelligence and smart team collaboration to transform your blockchain and web3 ideas into actionable insights, propelling your projects to new heights of success.
 
 ## Features
 
@@ -95,7 +95,7 @@ This will generate a \`dist\` folder with your compiled assets, ready for deploy
 
 ## Contributing
 
-We welcome contributions to BlockchainBridgeway! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) file for details on our code of conduct and the process for submitting pull requests.
+We welcome contributions to BlockchainBridgeWay! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) file for details on our code of conduct and the process for submitting pull requests.
 
 ## License
 
@@ -103,8 +103,8 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Contact
 
-- Website: [https://blockchainbridgeway.com](https://blockchainbridgeway.com)
-- Email: info@blockchainbridgeway.com
+- Website: [https://BlockchainBridgeWay.com](https://BlockchainBridgeWay.com)
+- Email: info@BlockchainBridgeWay.com
 - Twitter: [@BlockchainBridge](https://twitter.com/BlockchainBridge)
 
 ## Acknowledgments
@@ -116,5 +116,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ---
 
-Built with ❤️ by the BlockchainBridgeway Team
+Built with ❤️ by the BlockchainBridgeWay Team
 

@@ -44,7 +44,7 @@ export default function Services() {
         <div className="flex justify-between items-center mb-16">
           <div>
             <h2 className="text-3xl font-bold text-white mb-1">What We Do: Powering Your Web3
-            Success 🚀</h2>
+            Success </h2>
             <p className="text-2xl mt-3">
               <span className="text-yellow-400">
                 No matter where you are in your Web3 journey, we’ve got the expertise to take your

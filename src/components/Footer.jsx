@@ -7,10 +7,10 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <img src="/placeholder.svg?height=32&width=32" alt="BlockchainBridgeway" className="h-8" />
-              <span className="font-bold">BlockchainBridgeway</span>
-            </div>
+            <div className="flex items-center gap-2 mb-4 font-bold">
+                <img src="/blockchain bridge logo.png" alt="BlockchainBridgeWay" className="w-8 h-8" />
+                BlockchainBridgeWay
+              </div>
             <p className="text-gray-400 mb-4">Join our newsletter</p>
             <div className="flex">
               <input 
@@ -48,14 +48,8 @@ export default function Footer() {
           </div>
           
           <div>
-            <h3 className="font-semibold mb-4">Location</h3>
-            <p className="text-gray-400">babulande 24 opposite ballon way</p>
-          </div>
-          
-          <div>
             <h3 className="font-semibold mb-4">Contact</h3>
             <p className="text-gray-400">web3smartskiper@gmail.com</p>
-            <p className="text-gray-400">+2347868926829</p>
           </div>
         </div>
         

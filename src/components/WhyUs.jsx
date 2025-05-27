@@ -8,19 +8,19 @@ export default function WhyUs() {
       },
       {
         image: "/Ellipse 4.png",
-        title: "Your Success, Our Mission ✅🚀",
+        title: "Your Success, Our Mission",
         description:
           "At Blockchain Bridge, client success isn’t just a goal—it’s the standard. We tailor our solutions to fit your unique needs, working closely with you every step of the way. When you thrive, we thrive—and we’re committed to delivering results that exceed expectations.",
       },
       {
         image: "/Ellipse 5.png",
-        title: "Security & Privacy: Non-Negotiable 🔒",
+        title: "Security & Privacy: Non-Negotiable",
         description:
           "In Web3, trust is everything—and we take security seriously. At Blockchain Bridge, we protect your assets, data, and community with strong encryption, secure smart contracts, and rigorous audits. Your ecosystem’s safety isn’t just a priority—it’s the foundation of everything we do.",
       },
       {
         image: "/Ellipse 6.png",
-        title: "Collaboration That Fuels Growth 🤝",
+        title: "Collaboration That Fuels Growth",
         description:
           "Success in Web3 isn’t a solo journey. That’s why we connect you with top-tier communities, investors, and builders to spark meaningful collaborations. Our platform makes it easy to form powerful partnerships, drive innovation, and scale faster—because when we build together, we thrive together.",
       },

@@ -5,8 +5,8 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-zinc-900/95 border-b border-zinc-800 backdrop-blur-sm">
       <div className="container flex items-center justify-between h-16 px-4">
       <div className="flex items-center gap-2">
-  <img src="/blockchain bridge logo.png" alt="BlockchainBridgeway Logo" className="w-10 h-10" />
-  <span className="text-white text-xl font-medium">BlockchainBridgeway</span>
+  <img src="/blockchain bridge logo.png" alt="BlockchainBridgeWay Logo" className="w-10 h-10" />
+  <span className="text-white text-xl font-medium">BlockchainBridgeWay</span>
 </div>
 
         
