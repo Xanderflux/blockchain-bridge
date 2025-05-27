@@ -10,32 +10,38 @@ export default function Services() {
       image: "/Ellipse 7.png",
       title: "Community Development, Management & Engagement",
       description: "We don’t just build communities—we keep them thriving. From engagement strategies to 24/7 management, we ensure your community stays active, vibrant, and aligned with your vision.",
+      link: "https://blockchain-bridge-1.gitbook.io/blockchain-bridge/~/changes/wBbV2WZarhQtfTQCkRui/our-services-comprehensive-solutions-for-web3-projects/community-development-management-and-engagement",
     },
     {
       image: "/Ellipse 8.png",
       title: "Blockchain & Full Stack Development",
       description: "Need secure, scalable blockchain solutions? We handle everything from backend infrastructure to frontend DApps, ensuring a seamless experience for users.",
+      link: "https://blockchain-bridge-1.gitbook.io/blockchain-bridge/~/changes/wBbV2WZarhQtfTQCkRui/our-services-comprehensive-solutions-for-web3-projects/blockchain-and-full-stack-development",
     },
     {
       image: "/Ellipse 9.png",
       title: "Graphics, Art and UI/UX Design",
       description: "First impressions matter. We craft visually stunning UI/UX designs, graphics, and branding elements that make your project stand out and keep users engaged.",
+      link: "https://blockchain-bridge-1.gitbook.io/blockchain-bridge/~/changes/wBbV2WZarhQtfTQCkRui/our-services-comprehensive-solutions-for-web3-projects/design-and-branding",
     },
     {
       image: "/Ellipse 10.png",
       title: "Content Strategy and Writing",
       description: "Your story deserves to be heard. We create compelling articles, whitepapers, and marketing content that effectively communicate your project’s vision and value.",
+      link: "https://blockchain-bridge-1.gitbook.io/blockchain-bridge/~/changes/wBbV2WZarhQtfTQCkRui/our-services-comprehensive-solutions-for-web3-projects/content-strategy-and-writing",
     },
     {
       image: "/Ellipse 11.png",
       title: "Project Management & Consultation",
       description: "From ideation to execution, we guide you through every phase of your project with expert consultation and hands-on project management.",
+      link: "https://blockchain-bridge-1.gitbook.io/blockchain-bridge/~/changes/wBbV2WZarhQtfTQCkRui/our-services-comprehensive-solutions-for-web3-projects/project-management-and-consultation",
     },
     {
       image: "/Ellipse 12.png",
       title: "Blockchain Economics and Data Analysis",
       description: "Make data-driven decisions with confidence. We analyze blockchain data, design sustainable token models, and provide insights to help you refine your strategy.",
-    }
+      link: "https://blockchain-bridge-1.gitbook.io/blockchain-bridge/~/changes/wBbV2WZarhQtfTQCkRui/our-services-comprehensive-solutions-for-web3-projects/tokenomics-and-data-analysis",
+    },
   ];
 
   return (
@@ -69,7 +75,7 @@ export default function Services() {
               }`}
               onMouseOver={() => setHighlightedIndex(index)}
               onMouseLeave={() => setHighlightedIndex(null)}
-              // onClick={() => setHighlightedIndex(index)}
+              onClick={() => setHighlightedIndex(index)}
             >
               <img 
                 src={service.image} 
@@ -88,8 +94,9 @@ export default function Services() {
               </p>
               <button 
                 className={`flex items-center gap-2 font-medium ${
-                  highlightedIndex === index ? 'text-black' : 'text-gray-900'
+                  highlightedIndex === index ? 'text-gray-600' : 'text-black'
                 }`}
+                onClick={() => window.open(service.link, '_blank')}
               >
                 Learn More <ArrowRight className="w-4 h-4" />
               </button>
