@@ -4,11 +4,55 @@ import { useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const projects = [
-  { title: "UI/UX Design Concept", image: "/ui-ux-design-concept.png" },
-  { title: "Blockchain Development", image: "/Safeguarding Spaces_ AI in Content Moderation.png" },
-  { title: "Data Analytics Dashboard", image: "/images.jpeg" },
-  { title: "Mobile App Development", image: "/Yellow and blue cyber city.png" },
+  {
+    title: "Chad coin",
+    image: "/Projects/Chad coin.jpeg",
+    href: "#",
+  },
+  {
+    title: "Decoder",
+    image: "/Projects/Decoder.jpeg",
+    href: "#",
+  },
+  {
+    title: "Doge caucus",
+    image: "/Projects/Doge caucus.jpeg",
+    href: "#",
+  },
+  {
+    title: "EaveAI",
+    image: "/Projects/EaveAI.jpeg",
+    href: "#",
+  },
+  {
+    title: "Injective Birds",
+    image: "/Projects/Injective Birds.jpeg",
+    href: "#",
+  },
+  {
+    title: "KAPPY Ai",
+    image: "/Projects/KAPPY Ai.jpeg",
+    href: "#",
+  },
+  {
+    title: "LutBox",
+    image: "/Projects/LutBox.jpeg",
+    href: "#",
+  },
+  {
+    title: "Shazam Finance",
+    image: "/Projects/Shazam Finance.jpeg",
+    href: "#",
+  },
+  {
+    title: "Sugar Land",
+    image: "/Projects/Sugar Land.jpeg",
+    href: "#",
+  },
 ];
+
+
+
 
 export default function Projects() {
   const scrollRef = useRef(null);
