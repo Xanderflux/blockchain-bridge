@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react'
+import { FaXTwitter, FaDiscord, FaTelegram, FaLinkedinIn, FaLinkedin } from 'react-icons/fa6'
 import { Button } from "@/components/ui/button"
 
 export default function Footer() {
@@ -8,6 +8,15 @@ export default function Footer() {
     { name: 'Testimonials', href: '#testimonials' },
     { name: 'FAQs', href: '#faq' }
   ];
+
+  const socials = [
+    { name: 'X', href: '#', icon: FaXTwitter },
+    { name: 'Telegram', href: '#', icon: FaTelegram },
+    { name: 'Discord', href: '#', icon: FaDiscord },
+    { name: 'LinkedIn', href: '#', icon: FaLinkedin }
+  ];
+
+
   return (
     <footer id='contact' className="bg-gray-900 text-white py-12 border-t border-gray-800">
       <div className="container mx-auto px-4">
@@ -24,7 +33,7 @@ export default function Footer() {
                 placeholder="Enter your email address" 
                 className="bg-gray-800 text-white px-4 py-2 rounded-l-md flex-grow"
               />
-              <Button className="bg-yellow-400 hover:bg-yellow-500 text-black rounded-l-none">
+              <Button className="bg-yellow-400 hover:bg-yellow-600 6ext-black rounded-l-none">
                 Subscribe
               </Button>
             </div>
@@ -37,7 +46,7 @@ export default function Footer() {
             <h3 className="font-semibold mb-4">Menu</h3>
             <ul className="space-y-2">
               {menu.map((item) => (
-                <li key={item}><a href={item.href} className="text-gray-400 hover:text-white">{item.name}</a></li>
+                <li key={item.name}><a href={item.href} className="text-gray-400 hover:text-white">{item.name}</a></li>
               ))}
             </ul>
           </div>
@@ -45,9 +54,9 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold mb-4">Follow us</h3>
             <div className="flex space-x-4">
-              {[Facebook, Twitter, Instagram, Linkedin].map((Icon, index) => (
-                <a key={index} href="#" className="text-gray-400 hover:text-white">
-                  <Icon className="w-6 h-6" />
+              {socials.map((social) => (
+                <a key={social.name} href={social.href} className="text-gray-400 hover:text-white" aria-label={social.name}>
+                  <social.icon className="w-7 h-7" />
                 </a>
               ))}
             </div>
