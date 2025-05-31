@@ -4,19 +4,19 @@ export default function WhyUs() {
         image: "/Always On, Always Ready.jpg",
         title: "Always On, Always Ready",
         description:
-          "Web3 never sleeps—and neither do we. Blockchain Bridge operates 24/7, ensuring your project runs smoothly at all times. Whether it’s blockchain management, community engagement, or technical support, we’re always here to keep things on track in the fast-moving decentralized world.",
+          "Web3 never sleeps—and neither do we. BlockchainBridgeWay operates 24/7, ensuring your project runs smoothly at all times. Whether it’s blockchain management, community engagement, or technical support, we’re always here to keep things on track in the fast-moving decentralized world.",
       },
       {
         image: "/Security & Privacy.jpg",
         title: "Security & Privacy",
         description:
-          "In Web3, trust is everything—and we take security seriously. At Blockchain Bridge, we protect your assets, data, and community with strong encryption, secure smart contracts, and rigorous audits. Your ecosystem’s safety isn’t just a priority—it’s the foundation of everything we do.",
+          "In Web3, trust is everything—and we take security seriously. At BlockchainBridgeWay, we protect your assets, data, and community with strong encryption, secure smart contracts, and rigorous audits. Your ecosystem’s safety isn’t just a priority—it’s the foundation of everything we do.",
       },
       {
         image: "/Your Success, Our Mission.jpg",
         title: "Your Success, Our Mission",
         description:
-          "At Blockchain Bridge, client success isn’t just a goal—it’s the standard. We tailor our solutions to fit your unique needs, working closely with you every step of the way. When you thrive, we thrive—and we’re committed to delivering results that exceed expectations.",
+          "At BlockchainBridgeWay, client success isn’t just a goal—it’s the standard. We tailor our solutions to fit your unique needs, working closely with you every step of the way. When you thrive, we thrive—and we’re committed to delivering results that exceed expectations.",
       },
       {
         image: "/Collaboration That Fuels Growth.jpg",

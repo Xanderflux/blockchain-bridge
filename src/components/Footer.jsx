@@ -1,4 +1,4 @@
-import { FaXTwitter, FaDiscord, FaTelegram, FaLinkedinIn, FaLinkedin } from 'react-icons/fa6'
+import { FaXTwitter, FaDiscord, FaTelegram, FaLinkedin } from 'react-icons/fa6'
 import { Button } from "@/components/ui/button"
 
 export default function Footer() {
