@@ -85,14 +85,14 @@ export default function Projects() {
         <h2 className="text-3xl font-bold text-yellow-400 mb-12 text-center">Projects We have Completed</h2>
 
         <button
-          className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-gray-900 bg-opacity-70 rounded-full p-3 hover:bg-yellow-400 transition-colors md:-left-8 lg:-left-16"
+          className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-gray-900 bg-opacity-70 rounded-full p-3 hover:bg-yellow-400 transition-colors"
           onClick={() => handleScroll("left")}
         >
           <ChevronLeft size={36} className="text-white" />
         </button>
         
         <button
-          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-gray-900 bg-opacity-70 rounded-full p-3 hover:bg-yellow-400 transition-colors md:-right-8 lg:-right-16"
+          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-gray-900 bg-opacity-70 rounded-full p-3 hover:bg-yellow-400 transition-colors"
           onClick={() => handleScroll("right")}
         >
           <ChevronRight size={36} className="text-white" />
