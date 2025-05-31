@@ -15,10 +15,18 @@ export default function Header() {
           <a href="#services" className="text-white hover:text-yellow-400">Services</a>
           <a href="#contact" className="text-white hover:text-yellow-400">Contact</a>
         </nav>
-        
-        <Button className="bg-yellow-400 hover:bg-yellow-500 text-black">
-          Documentation
-        </Button>
+
+          <Button
+            className="bg-yellow-400 hover:bg-yellow-500 text-black px-4 py-2 rounded"
+            onClick={() =>
+              window.open(
+                "https://blockchain-bridge-1.gitbook.io/blockchain-bridge/~/changes/wBbV2WZarhQtfTQCkRui",
+                "_blank"
+              )
+            }
+          >
+            Documentation
+          </Button>
       </div>
     </header>
   )

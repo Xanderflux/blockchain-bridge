@@ -46,8 +46,8 @@ import {
     <div className="container mx-auto px-4">
       <div className="flex justify-between items-center mb-12">
         <div>
-          <h2 className="text-3xl font-bold text-white">FAQs</h2>
-          <p className="text-yellow-400">Support</p>
+          <h2 className="text-3xl font-bold text-yellow-400">FAQs</h2>
+          <p className="text-white">Support</p>
         </div>
         <p className="text-gray-400">
           Have a question and don&apos;t see the answer below?<br />

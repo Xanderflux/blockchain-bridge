@@ -26,17 +26,24 @@ export default function Hero() {
           
           <p className="text-gray-400 text-lg mb-8 max-w-2xl mx-auto">
             Unlock the full potential of your project with the perfect blend of expertise and innovation.
-            At Blockchain Bridge, we combine smart strategies with top-tier talent to turn your Web3
+            At BlockchainBridgeWay, we combine smart strategies with top-tier talent to turn your Web3
             vision into reality- faster, smarter, and more efficiently.
             Whether you&apos;re refining an idea or scaling a breakthrough, we help you make informed
             decisions that push your project to new heights.
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-16">
-            <Button className="bg-yellow-400 hover:bg-yellow-500 text-black text-lg px-8">
+            <Button 
+            className="bg-yellow-400 hover:bg-yellow-500 text-black text-lg px-8"
+             onClick={() =>
+                window.open(
+                  "https://blockchain-bridge-1.gitbook.io/blockchain-bridge/~/changes/wBbV2WZarhQtfTQCkRui",
+                  "_blank"
+                )
+              }>
               Documentation
             </Button>
-            <Button variant="outline" className="text-white text-lg px-8">
+            <Button variant="outline" className="text-black text-lg px-8">
               <Play className="w-4 h-4 mr-2" /> Watch video
             </Button>
           </div>

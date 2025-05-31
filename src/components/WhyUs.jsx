@@ -1,25 +1,25 @@
 export default function WhyUs() {
     const features = [
       {
-        image: "/Ellipse 3.png",
+        image: "/Always On, Always Ready.jpg",
         title: "Always On, Always Ready",
         description:
           "Web3 never sleeps—and neither do we. Blockchain Bridge operates 24/7, ensuring your project runs smoothly at all times. Whether it’s blockchain management, community engagement, or technical support, we’re always here to keep things on track in the fast-moving decentralized world.",
       },
       {
-        image: "/Ellipse 4.png",
+        image: "/Security & Privacy.jpg",
+        title: "Security & Privacy",
+        description:
+          "In Web3, trust is everything—and we take security seriously. At Blockchain Bridge, we protect your assets, data, and community with strong encryption, secure smart contracts, and rigorous audits. Your ecosystem’s safety isn’t just a priority—it’s the foundation of everything we do.",
+      },
+      {
+        image: "/Your Success, Our Mission.jpg",
         title: "Your Success, Our Mission",
         description:
           "At Blockchain Bridge, client success isn’t just a goal—it’s the standard. We tailor our solutions to fit your unique needs, working closely with you every step of the way. When you thrive, we thrive—and we’re committed to delivering results that exceed expectations.",
       },
       {
-        image: "/Ellipse 5.png",
-        title: "Security & Privacy: Non-Negotiable",
-        description:
-          "In Web3, trust is everything—and we take security seriously. At Blockchain Bridge, we protect your assets, data, and community with strong encryption, secure smart contracts, and rigorous audits. Your ecosystem’s safety isn’t just a priority—it’s the foundation of everything we do.",
-      },
-      {
-        image: "/Ellipse 6.png",
+        image: "/Collaboration That Fuels Growth.jpg",
         title: "Collaboration That Fuels Growth",
         description:
           "Success in Web3 isn’t a solo journey. That’s why we connect you with top-tier communities, investors, and builders to spark meaningful collaborations. Our platform makes it easy to form powerful partnerships, drive innovation, and scale faster—because when we build together, we thrive together.",
@@ -42,7 +42,7 @@ export default function WhyUs() {
                   <img
                     src={feature.image}
                     alt={feature.title}
-                    className="w-12 h-12 mb-6"
+                    className="w-12 h-12 mb-6 rounded-full"
                   />
                   <h3 className="text-white text-2xl font-semibold mb-4">
                     {feature.title}
@@ -73,7 +73,7 @@ export default function WhyUs() {
                   <img
                     src={feature.image}
                     alt={feature.title}
-                    className="w-12 h-12 mb-6"
+                    className="w-12 h-12 mb-6 rounded-full"
                   />
                   <h3 className="text-white text-2xl font-semibold mb-4">
                     {feature.title}
