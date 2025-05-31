@@ -27,7 +27,7 @@ export default function WhyUs() {
     ];
   
     return (
-      <section className="bg-[#0B0F17] py-24">
+      <section id="about" className="bg-[#0B0F17] py-24">
         <div className="container mx-auto px-6">
           <h2 className="text-yellow-400 text-4xl font-bold mb-16">Why Us?</h2>
   

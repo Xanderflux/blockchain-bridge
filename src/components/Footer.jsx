@@ -2,8 +2,14 @@ import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 
 export default function Footer() {
+  const menu = [
+    { name: 'About', href: '#about' },
+    { name: 'Services', href: '#services' },
+    { name: 'Testimonials', href: '#testimonials' },
+    { name: 'FAQs', href: '#faq' }
+  ];
   return (
-    <footer className="bg-gray-900 text-white py-12 border-t border-gray-800">
+    <footer id='contact' className="bg-gray-900 text-white py-12 border-t border-gray-800">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
           <div className="lg:col-span-2">
@@ -30,8 +36,8 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold mb-4">Menu</h3>
             <ul className="space-y-2">
-              {['About', 'Why us', 'Services', 'Testimonials', 'FAQs'].map((item) => (
-                <li key={item}><a href="#" className="text-gray-400 hover:text-white">{item}</a></li>
+              {menu.map((item) => (
+                <li key={item}><a href={item.href} className="text-gray-400 hover:text-white">{item.name}</a></li>
               ))}
             </ul>
           </div>

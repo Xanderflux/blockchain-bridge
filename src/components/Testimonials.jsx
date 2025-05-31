@@ -2,7 +2,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 export default function Testimonials() {
   return (
-    <section className="bg-gray-900 py-20">
+    <section id='testimonials' className="bg-gray-900 py-20">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-white mb-12">What they say about us</h2>
         

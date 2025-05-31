@@ -45,7 +45,7 @@ export default function Services() {
   ];
 
   return (
-    <section className="bg-[#0B0F17] py-24">
+    <section id='services' className="bg-[#0B0F17] py-24">
       <div className="container mx-auto px-6">
         <div className="flex justify-between items-center mb-16">
           <div>

@@ -26,7 +26,7 @@ export default function Hero() {
           
           <p className="text-gray-400 text-lg mb-8 max-w-2xl mx-auto">
             Unlock the full potential of your project with the perfect blend of expertise and innovation.
-            At BlockchainBridgeWay, we combine smart strategies with top-tier talent to turn your Web3
+            At Blockchain Bridge, we combine smart strategies with top-tier talent to turn your Web3
             vision into reality- faster, smarter, and more efficiently.
             Whether you&apos;re refining an idea or scaling a breakthrough, we help you make informed
             decisions that push your project to new heights.

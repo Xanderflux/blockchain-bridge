@@ -17,7 +17,7 @@ export default function Header() {
         </nav>
 
           <Button
-            className="bg-yellow-400 hover:bg-yellow-500 text-black px-4 py-2 rounded"
+              className="bg-yellow-400 hover:bg-yellow-500 text-black px-4 py-2 rounded"
             onClick={() =>
               window.open(
                 "https://blockchain-bridge-1.gitbook.io/blockchain-bridge/~/changes/wBbV2WZarhQtfTQCkRui",

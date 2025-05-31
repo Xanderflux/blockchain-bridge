@@ -40,40 +40,37 @@ import {
   
   export default function FAQ() {
     return(
-
-    
-    <section className="bg-gray-900 py-20">
-    <div className="container mx-auto px-4">
-      <div className="flex justify-between items-center mb-12">
-        <div>
-          <h2 className="text-3xl font-bold text-yellow-400">FAQs</h2>
-          <p className="text-white">Support</p>
+    <section id="faq" className="bg-gray-900 py-20">
+      <div className="container mx-auto px-4">
+      <div className="flex justify-between items-center mb-12 flex-col md:flex-row md:items-center md:text-left text-left">
+        <div className="mb-6 md:mb-0">
+        <h2 className="text-3xl font-bold text-yellow-400 text-left">FAQs</h2>
+        <p className="text-white text-left">Support</p>
         </div>
-        <p className="text-gray-400">
-          Have a question and don&apos;t see the answer below?<br />
-          Feel free to contact us at 
-            <span className="text-white font-bold hover:text-yellow-400 hover:cursor-pointer ">
-            {/* web3smartskiper@gmail.com */}
-              <div className="flex items-center gap-2">
-                <img src="/blockchain bridge logo.png" alt="BlockchainBridgeWay" className="w-8 h-8" />
-                BlockchainBridgeWay
-              </div>
-            </span>
+        <p className="text-gray-400 ml-0 md:ml-9 text-left">
+        Have a question and don&apos;t see the answer below?<br />
+        Feel free to contact us at 
+          <span className="text-white font-bold hover:text-yellow-400 hover:cursor-pointer ">
+          <div className="flex items-center gap-2">
+            <img src="/blockchain bridge logo.png" alt="BlockchainBridgeWay" className="w-8 h-8" />
+            BlockchainBridgeWay
+          </div>
+          </span>
         </p>
       </div>
 
-      <Accordion type="single" collapsible className="space-y-4">
+      <Accordion type="single" collapsible className="space-y-4 text-left">
         {faqs.map((faq, index) => (
-          <AccordionItem key={index} value={`item-${index}`} className="border-b border-gray-800">
-            <AccordionTrigger className="text-white hover:text-yellow-400 hover:no-underline">{faq.question}</AccordionTrigger>
-            <AccordionContent className="text-gray-400">
-              {faq.answer}
-            </AccordionContent>
-          </AccordionItem>
+        <AccordionItem key={index} value={`item-${index}`} className="border-b border-gray-800">
+          <AccordionTrigger className="text-white hover:text-yellow-400 hover:no-underline text-left">{faq.question}</AccordionTrigger>
+          <AccordionContent className="text-gray-400 text-left">
+          {faq.answer}
+          </AccordionContent>
+        </AccordionItem>
         ))}
       </Accordion>
-    </div>
-  </section>
+      </div>
+    </section>
     )
   }
   
