@@ -49,11 +49,15 @@ export default function Hero() {
           </div>
 
           <div className="max-w-4xl mx-auto bg-yellow-100/10 rounded-2xl p-16">
-            <Button variant="outline" className="bg-white text-black hover:bg-gray-100">
-              <Play className="w-4 h-4 mr-2" />
-              Watch introduce video
-              <span className="ml-2 text-sm text-gray-500">5 mins</span>
-            </Button>
+            <div className="flex items-center justify-center">
+              <Button variant="outline" className="bg-white text-black hover:bg-gray-100">
+                <Play className="w-4 h-4 mr-2" />
+                Watch introduce video
+                <span className="ml-2 text-sm text-gray-500 flex items-center justify-center">
+                  5 mins
+                </span>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
