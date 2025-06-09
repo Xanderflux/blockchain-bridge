@@ -46,7 +46,7 @@ export default function Footer() {
             <h3 className="font-semibold mb-4">Menu</h3>
             <ul className="space-y-2">
               {menu.map((item) => (
-                <li key={item.name}><a href={item.href} className="text-gray-400 hover:text-white">{item.name}</a></li>
+                <li key={item.name}><a className="text-gray-400 hover:text-white" href={item.href}>{item.name}</a></li>
               ))}
             </ul>
           </div>
@@ -69,11 +69,11 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-gray-800 pt-8 mt-8 text-center text-gray-400">
-          <p>&copy; 2024 Smart skiper</p>
+          <p>&copy; 2025 BlockchainBridgeWay</p>
           <div className="flex justify-center space-x-4 mt-4">
-            <a href="#" className="hover:text-white">Privacy Policy</a>
-            <a href="#" className="hover:text-white">Terms of Service</a>
-            <a href="#" className="hover:text-white">Cookies Settings</a>
+            <a target='_blank' href="https://blockchain-bridge-1.gitbook.io/blockchain-bridge/privacy-policy" className="hover:text-white">Privacy Policy</a>
+            <a target='_blank' href="https://blockchain-bridge-1.gitbook.io/blockchain-bridge/terms-and-services" className="hover:text-white">Terms of Service</a>
+            <a target='_blank' href="https://blockchain-bridge-1.gitbook.io/blockchain-bridge/cookie-settings" className="hover:text-white">Cookies Settings</a>
           </div>
         </div>
       </div>

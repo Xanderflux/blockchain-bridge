@@ -33,16 +33,18 @@ export default function Hero() {
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-16">
-            <Button 
-            className="bg-yellow-400 hover:bg-yellow-500 text-black text-lg px-8"
-             onClick={() =>
-                window.open(
-                  "https://blockchain-bridge-1.gitbook.io/blockchain-bridge/~/changes/wBbV2WZarhQtfTQCkRui",
-                  "_blank"
-                )
-              }>
-              Documentation
-            </Button>
+            <a target='_blank' className="text-gray-400 hover:text-white" href="https://blockchain-bridge-1.gitbook.io/blockchain-bridge">
+              <Button 
+              className="bg-yellow-400 hover:bg-yellow-500 text-black text-lg px-8"
+              //  onClick={() =>
+              //     window.open(
+              //       "https://blockchain-bridge-1.gitbook.io/blockchain-bridge",
+              //       "_blank"
+              //     )}
+                >
+                Documentation
+              </Button>
+            </a>
             <Button variant="outline" className="text-black text-lg px-8">
               <Play className="w-4 h-4 mr-2" /> Watch video
             </Button>
