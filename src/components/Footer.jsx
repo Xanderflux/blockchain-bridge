@@ -9,11 +9,13 @@ export default function Footer() {
     { name: 'FAQs', href: '#faq' }
   ];
 
+
   const socials = [
     { name: 'X', href: '#', icon: FaXTwitter },
-    { name: 'Telegram', href: '#', icon: FaTelegram },
-    { name: 'Discord', href: '#', icon: FaDiscord },
-    { name: 'LinkedIn', href: '#', icon: FaLinkedin }
+    { name: 'Telegram', href: 'https://t.me/blockchainbridgeway', icon: FaTelegram },
+    { name: 'Discord', href: 'https://discord.gg/Dnz9ddzm', icon: FaDiscord },
+    { name: 'LinkedIn', href: 'https://www.linkedin.com/company/blockchainbridgeway', icon: FaLinkedin },
+    // { name: 'Upwork', href: 'https://www.upwork.com/agencies/1932687313834349276/', icon: FaUpwork }
   ];
 
 
@@ -55,7 +57,7 @@ export default function Footer() {
             <h3 className="font-semibold mb-4">Follow us</h3>
             <div className="flex space-x-4">
               {socials.map((social) => (
-                <a key={social.name} href={social.href} className="text-gray-400 hover:text-white" aria-label={social.name}>
+                <a target='_blank' key={social.name} href={social.href} className="text-gray-400 hover:text-white" aria-label={social.name}>
                   <social.icon className="w-7 h-7" />
                 </a>
               ))}
