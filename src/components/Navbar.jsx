@@ -27,12 +27,13 @@ export default function Navbar() {
 
         <a target='_blank'  href="https://blockchain-bridge-1.gitbook.io/blockchain-bridge">
           <Button className="bg-yellow-400 hover:bg-yellow-500 text-black px-2 py-1 rounded md:px-4 md:py-2"
-            onClick={() =>
-                  window.open(
-                    "https://blockchain-bridge-1.gitbook.io/blockchain-bridge",
-                    "_blank"
-                  )
-                }>
+            // onClick={() =>
+            //       window.open(
+            //         "https://blockchain-bridge-1.gitbook.io/blockchain-bridge",
+            //         "_blank"
+            //       )
+            //     }
+            >
             Documentation
           </Button>
         </a>
