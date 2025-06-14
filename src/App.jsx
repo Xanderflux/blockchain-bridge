@@ -1,29 +1,15 @@
-// import Header from './components/Header'
-import Hero from './components/Hero'
-import WhyUs from './components/WhyUs'
-import Services from './components/Services'
-import Testimonials from './components/Testimonials'
-import FAQ from './components/FAQ'
-import Footer from './components/Footer'
-import Projects from './components/Projects'
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Home from "./Home"; 
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-900">
-      {/* <Header /> */}
-      {/* <main> */}
-        <Hero />
-        <WhyUs />
-        <Services />
-        <Projects/>
-        <Testimonials />
-       
-        <FAQ />
-      {/* </main> */}
-      <Footer />
-    </div>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
-
+export default App;
