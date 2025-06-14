@@ -1,45 +1,84 @@
-import { ChevronLeft, ChevronRight } from 'lucide-react'
+
+
+const Testimonial = [
+  {
+    image: "/Projects/Decoder.jpeg",
+    name: "Decoder",
+    text: "They understood our project like co-founders.",
+  },
+  {
+    image: "/Projects/LutBox.jpeg",
+    name: "LutBox",
+    text: "Our brand finally has a visual identity.",
+  },
+  {
+    image: "/Projects/Chad_coin.jpeg",
+    name: "Chad coin",
+    text: "Our community became active overnight!",
+  },
+  {
+    image: "/Projects/Injective_Birds.jpeg",
+    name: "Injective Birds",
+    text: "Their management team is always active, even weekends.",
+  },
+  {
+    image: "/Projects/Sugar_Land.jpeg",
+    name: "Sugar Land",
+    text: "We saw real growth in engagement and followers.",
+  },
+  {
+    image: "/Projects/EaveAI.jpeg",
+    name: "EaveAI",
+    text: "Our launch blew up, thanks to their raiders!",
+  },
+  {
+    image: "/Projects/KAPPY_Ai.jpeg",
+    name: "KAPPY Ai",
+    text: "They don't just post content, they write narratives.",
+  },
+  {
+    image: "/Projects/Shazam_Finance.jpeg",
+    name: "Shazam Finance",
+    text: "Working with them feels like having an internal team.",
+  },
+  {
+    image: "/Projects/Doge_caucus.jpeg",
+    name: "Doge caucus",
+    text: "Designs? Clean, Web3-native, and on-brand.",
+  },
+];
 
 export default function Testimonials() {
+
   return (
-    <section id='testimonials' className="bg-gray-900 py-20">
+    <section id="testimonials" className="bg-gray-900 py-20">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-white mb-12">What they say about us</h2>
-        
-        <div className="bg-gray-800 rounded-xl p-8 relative">
-          <img 
-            src="/testimonial.png?height=400&width=600" 
-            alt="Testimonial" 
-            className="rounded-xl object-cover w-full h-[400px] mb-8"
-          />
-          
-          <p className="text-gray-300 mb-6">
-            "Lorem ipsum dolor sit amet consectetur. Tempus morbi egest as libero pretium pulvinar pretium placerat nec quis. Feugi at vel iaculis et magna vivamus nibh nunc pellentesque inte rdum. Id elit vitae arcu pharetra eget. Integer vitae molestie elementum adipiscing leo ante sed cum elementum. Nunc purus ornare aliquam risus adipiscing in ut non. Congue risu s posuere pellentesque morbi viverra neque orci aliquet."
-          </p>
-          
-          <div className="flex items-center gap-4">
-            <img 
-              src="/adedokun.png?height=48&width=48" 
-              alt="Avatar" 
-              className="rounded-full w-12 h-12"
-            />
-            <div>
-              <h4 className="text-white font-semibold">Adeodokun Babaatundelala</h4>
-              <p className="text-gray-400">Mechatronics student 2020/1</p>
+        <h2 className="text-3xl font-bold text-white mb-12 tracking-wide">
+          What They Say About Us
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {Testimonial.map((testimonial, index) => (
+            <div
+              key={index}
+              className="relative bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+            >
+                  <div className="mb-4">
+                    <img
+                      src={testimonial.image}
+                      alt={`${testimonial.name} testimonial`}
+                      className="w-full h-48 object-cover rounded-lg"
+                    />
+                  </div>
+                  <p className="text-white text-lg leading-relaxed mb-4">
+                    &quot;{testimonial.text}&quot;
+                  </p>
+                  <p className="text-yellow-400 font-semibold text-right">
+                    {testimonial.name}
+                  </p>
             </div>
-          </div>
-          
-          <div className="absolute bottom-8 right-8 flex gap-2">
-            <button className="bg-gray-700 p-2 rounded-full">
-              <ChevronLeft className="text-white" />
-            </button>
-            <button className="bg-gray-700 p-2 rounded-full">
-              <ChevronRight className="text-white" />
-            </button>
-          </div>
+          ))}
         </div>
       </div>
     </section>
-  )
+  );
 }
-

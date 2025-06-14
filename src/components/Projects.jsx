@@ -6,7 +6,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const projects = [
   {
     title: "Chad coin",
-    image: "/Projects/Chad coin.jpeg",
+    image: "/Projects/Chad_coin.jpeg",
     href: "#",
   },
   {
@@ -16,7 +16,7 @@ const projects = [
   },
   {
     title: "Doge caucus",
-    image: "/Projects/Doge caucus.jpeg",
+    image: "/Projects/Doge_caucus.jpeg",
     href: "#",
   },
   {
@@ -26,12 +26,12 @@ const projects = [
   },
   {
     title: "Injective Birds",
-    image: "/Projects/Injective Birds.jpeg",
+    image: "/Projects/Injective_Birds.jpeg",
     href: "#",
   },
   {
     title: "KAPPY Ai",
-    image: "/Projects/KAPPY Ai.jpeg",
+    image: "/Projects/KAPPY_Ai.jpeg",
     href: "#",
   },
   {
@@ -41,12 +41,12 @@ const projects = [
   },
   {
     title: "Shazam Finance",
-    image: "/Projects/Shazam Finance.jpeg",
+    image: "/Projects/Shazam_Finance.jpeg",
     href: "#",
   },
   {
     title: "Sugar Land",
-    image: "/Projects/Sugar Land.jpeg",
+    image: "/Projects/Sugar_Land.jpeg",
     href: "#",
   },
 ];
@@ -82,8 +82,9 @@ export default function Projects() {
   return (
     <section id="projects" className="bg-gray-800 py-16">
       <div className="container mx-auto px-4 relative">
-        <h2 className="text-3xl font-bold text-yellow-400 mb-12 text-center">Projects We have Completed</h2>
-
+        <h2 className="text-3xl font-bold text-yellow-400 mb-12 tracking-wide">
+          Projects We have Completed
+        </h2>
         <button
           className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-gray-900 bg-opacity-70 rounded-full p-3 hover:bg-yellow-400 transition-colors"
           onClick={() => handleScroll("left")}
