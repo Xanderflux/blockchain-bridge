@@ -9,7 +9,7 @@ import Projects from './components/Projects'
 
 function Home() {
   return (
-    <div className="min-h-screen bg-gray-900">
+    <div className="min-h-screen max- bg-gray-900">
       {/* <Header /> */}
       {/* <main> */}
         <Hero />

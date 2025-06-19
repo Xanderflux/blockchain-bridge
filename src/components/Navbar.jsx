@@ -109,8 +109,8 @@ export default function Navbar() {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: 0.5 }}
         >
-          <Button className="bg-yellow-400 hover:bg-yellow-500 text-black px-2 py-1 rounded md:px-4 md:py-2">
-            Documentation
+          <Button className="hidden sm:block bg-yellow-400 hover:bg-yellow-500 text-black px-2 py-1 rounded md:px-4 md:py-2">
+            <span className="">Documentation</span>
           </Button>
         </motion.a>
 
@@ -154,6 +154,7 @@ export default function Navbar() {
               {item.name}
             </ScrollLink>
           ))}
+          
         </motion.nav>
       )}
     </motion.header>

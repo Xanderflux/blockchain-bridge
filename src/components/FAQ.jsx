@@ -48,28 +48,32 @@ const faqs = [
 
 export default function FAQ() {
   return (
-    <section id="faq" className="bg-gray-900 py-20">
-      <div className="container mx-auto px-4">
+    <section id="faq" className="bg-gray-900 py-16 sm:py-20">
+      <div className="container mx-auto px-2 sm:px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
-          className="flex justify-between  mb-12 flex-col md:flex-row"
+          className="flex flex-col md:flex-row justify-between mb-8 md:mb-12 gap-6"
         >
-          <div className="mb-6 md:mb-0 text-left">
-            <h2 className="text-3xl font-bold text-yellow-400">FAQs</h2>
-            <p className="text-white">Support</p>
+          <div className="mb-2 md:mb-0 text-left">
+            <h2 className="text-2xl xs:text-3xl md:text-4xl font-bold text-yellow-400">FAQs</h2>
+            <p className="text-white text-base xs:text-lg">Support</p>
           </div>
-          <div className="text-gray-400 text-left md:text-right max-w-lg">
-            <p className="mb-2">Have a question and don&apos;t see the answer below?</p>
-            <p className="inline-flex items-center gap-2  text-white ">
+          <div className="text-gray-400 text-left md:text-right max-w-full md:max-w-lg">
+            <p className="mb-1 xs:mb-2 text-sm xs:text-base">
+              Have a question and don&apos;t see the answer below?
+            </p>
+            <p className="inline-flex items-center gap-2 text-white text-xs xs:text-sm md:text-base flex-wrap">
               Feel free to contact us at{" "}
-              <span className="inline-flex items-center gap-2 font-bold cursor-pointer hover:text-yellow-400">
+              <span
+                className="inline-flex items-center gap-2 font-bold cursor-pointer hover:text-yellow-400 text-xs xs:text-sm md:text-xl"
+              >
                 <img
                   src="/blockchain bridge logo.png"
                   alt="BlockchainBridgeWay"
-                  className="w-7 h-7 rounded-full font-"
+                  className="w-6 h-6 xs:w-7 xs:h-7 rounded-full"
                 />
                 BlockchainBridgeWay
               </span>
@@ -83,7 +87,7 @@ export default function FAQ() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <Accordion type="single" collapsible className="space-y-4">
+          <Accordion type="single" collapsible className="space-y-3 xs:space-y-4">
             {faqs.map((faq, index) => (
               <motion.div
                 key={index}
@@ -92,7 +96,7 @@ export default function FAQ() {
                 transition={{
                   duration: 0.5,
                   ease: "easeOut",
-                  delay: index * 0.2, // stagger delay
+                  delay: index * 0.15,
                 }}
                 viewport={{ once: true }}
               >
@@ -100,16 +104,16 @@ export default function FAQ() {
                   value={`item-${index}`}
                   className="border-b border-gray-800"
                 >
-                  <AccordionTrigger className="text-white hover:text-yellow-400 text-left hover:no-underline">
+                  <AccordionTrigger className="text-white hover:text-yellow-400 text-left hover:no-underline text-base xs:text-lg md:text-xl font-medium">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-gray-400 text-left">
+                  <AccordionContent className="text-gray-400 text-left text-sm xs:text-base md:text-lg leading-relaxed">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>
-                </motion.div>
-              ))}
-        </Accordion>
+              </motion.div>
+            ))}
+          </Accordion>
         </motion.div>
       </div>
     </section>
