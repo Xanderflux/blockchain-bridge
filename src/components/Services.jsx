@@ -1,4 +1,6 @@
+'use client';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { Button } from "./ui/button";
 
@@ -48,9 +50,7 @@ export default function Services() {
     <section id='services' className="bg-[#0B0F17] py-24">
       <div className="container mx-auto px-6">
         <div className="flex justify-between items-center mb-16">
-          <div>
-            <h2 className="text-3xl font-bold text-white mb-1">What We Do</h2>
-          </div>
+          <h2 className="text-3xl font-bold text-white mb-1">What We Do</h2>
           <Button
             className="bg-yellow-400 hover:bg-yellow-500 text-black px-8"
             onClick={() =>
@@ -66,21 +66,22 @@ export default function Services() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div 
+            <motion.div
               key={index}
-              className={`bg-white rounded-2xl p-8 ${
-                highlightedIndex === index 
-                  ? 'bg-yellow-400' 
-                  : 'bg-white'
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              className={`rounded-2xl p-8 shadow-md transition-colors duration-300 cursor-pointer ${
+                highlightedIndex === index ? 'bg-yellow-400' : 'bg-white'
               }`}
               onMouseOver={() => setHighlightedIndex(index)}
               onMouseLeave={() => setHighlightedIndex(null)}
-              // onClick={() => setHighlightedIndex(index)}
             >
-              <img 
-                src={service.image} 
-                alt={service.title} 
-                className="w-16 h-16 mb-6 rounded-full" 
+              <img
+                src={service.image}
+                alt={service.title}
+                className="w-16 h-16 mb-6 rounded-full"
               />
               <h3 className={`text-xl font-semibold mb-4 ${
                 highlightedIndex === index ? 'text-black' : 'text-gray-900'
@@ -92,25 +93,24 @@ export default function Services() {
               }`}>
                 {service.description}
               </p>
-              <a target='_blank' href={service.link}>
-                <button 
+              <a target="_blank" href={service.link} rel="noopener noreferrer">
+                <button
                   className={`flex items-center gap-2 font-medium relative group focus:outline-none ${
-                    highlightedIndex === index ? 'text-gray-600' : 'text-black'
+                    highlightedIndex === index ? 'text-gray-700' : 'text-black'
                   }`}
-                  // onClick={() => window.open(service.link, '_blank')}
                 >
                   Learn More <ArrowRight className="w-4 h-4" />
                   <span
-                    className={`
+                    className="
                       absolute left-0 -bottom-1 w-full h-[2px] 
                       border-b-2 border-dotted border-current 
                       opacity-0 group-hover:opacity-100 group-focus:opacity-100
                       transition-opacity
-                    `}
+                    "
                   />
                 </button>
               </a>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
