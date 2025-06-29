@@ -22,6 +22,17 @@ export default function Navbar() {
   };
 
   useEffect(() => {
+    if (isMenuOpen) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+
+    return () => document.body.classList.remove('no-scroll');
+  }, [isMenuOpen]);
+
+
+  useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY + window.innerHeight;
       const pageHeight = document.documentElement.scrollHeight;
@@ -32,6 +43,8 @@ export default function Navbar() {
         setActiveSection('contact');
       }
     };
+
+    
 
     window.addEventListener('scroll', handleScroll);
     Events.scrollEvent.register('begin', () => {});
