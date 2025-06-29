@@ -103,9 +103,9 @@ export default function Footer() {
             </div>
           </motion.div>
 
-          <motion.div variants={fadeInUp} custom={4}>
+          <motion.div variants={fadeInUp} custom={4} className='ml-[-0.5rem]'>
             <h3 className="font-semibold mb-4">Contact</h3>
-            <p className="text-gray-400">web3smartskiper@gmail.com</p>
+            <p className="text-gray-400">blockchainbridgeway@gmail.com</p>
           </motion.div>
         </div>
 

@@ -1,6 +1,8 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const testimonials = [
   {
@@ -50,59 +52,77 @@ const testimonials = [
   },
 ];
 
-const cardVariants = {
-  hidden: { opacity: 0, y: 50 },
-  visible: (i) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: i * 0.1,
-      duration: 0.6,
-      ease: 'easeOut',
-    },
-  }),
-};
-
 export default function Testimonials() {
+  const [index, setIndex] = useState(0);
+
+  const handlePrev = () => {
+    setIndex((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
+  };
+
+  const handleNext = () => {
+    setIndex((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
+  };
+
+  const testimonial = testimonials[index];
+
   return (
-    <section id="testimonials" className="bg-gray-900 py-20">
+    <section id ='testimonials' className="bg-gray-900 py-20">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
-          className="text-3xl font-bold text-white mb-12 tracking-wide "
+          className="text-3xl font-bold text-white mb-12 text-left"
         >
           What They Say About Us
         </motion.h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
+        <div className="bg-gray-800 rounded-xl p-8 relative max-w-4xl mx-auto">
+          <AnimatePresence mode="wait">
             <motion.div
               key={index}
-              className="relative bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-yellow-400/20 transition-shadow duration-300 overflow-hidden hover:scale-[1.03] transform"
-              custom={index}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={cardVariants}
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -50 }}
+              transition={{ duration: 0.5 }}
             >
-              <div className="mb-4">
+              <img
+                src={testimonial.image}
+                alt={`${testimonial.name} testimonial`}
+                className="rounded-xl object-cover w-full h-[400px] mb-8"
+              />
+
+              <p className="text-gray-300 mb-6 text-lg italic">“{testimonial.text}”</p>
+
+              <div className="flex items-center gap-4">
                 <img
                   src={testimonial.image}
-                  alt={`${testimonial.name} testimonial`}
-                  className="w-full h-48 object-cover rounded-lg"
+                  alt={testimonial.name}
+                  className="rounded-full w-12 h-12 object-cover"
                 />
+                <div>
+                  <h4 className="text-white font-semibold">{testimonial.name}</h4>
+                  <p className="text-gray-400 text-sm">Web3 Partner</p>
+                </div>
               </div>
-              <p className="text-white text-lg leading-relaxed mb-4">
-                &quot;{testimonial.text}&quot;
-              </p>
-              <p className="text-yellow-400 font-semibold text-right">
-                — {testimonial.name}
-              </p>
             </motion.div>
-          ))}
+          </AnimatePresence>
+
+          <div className="absolute bottom-8 right-8 flex gap-2">
+            <button
+              onClick={handlePrev}
+              className="bg-gray-700 p-2 rounded-full hover:bg-yellow-500 transition"
+            >
+              <ChevronLeft className="text-white" />
+            </button>
+            <button
+              onClick={handleNext}
+              className="bg-gray-700 p-2 rounded-full hover:bg-yellow-500 transition"
+            >
+              <ChevronRight className="text-white" />
+            </button>
+          </div>
         </div>
       </div>
     </section>
